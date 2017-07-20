@@ -1,0 +1,87 @@
+apply plugin: 'com.google.gms.google-services'
+apply plugin: 'com.android.application'
+
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.2"
+    defaultConfig {
+        applicationId "app.android.pmdlocker.com.pmd_locker"
+        minSdkVersion 16
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        vectorDrawables.useSupportLibrary = true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    productFlavors {
+        development {
+            buildConfigField 'String', 'HOST', "\"https://apipmd.mybluemix.net\""
+            buildConfigField 'String', 'API_VERSION', "\"v1\""
+            buildConfigField 'Integer', 'READ_TIME_OUT', "60"
+            buildConfigField 'Integer', 'CONNECT_TIME_OUT', "60"
+        }
+        production {
+            buildConfigField 'String', 'HOST', "\"https://apipmd.mybluemix.net\""
+            buildConfigField 'String', 'API_VERSION', "\"v1\""
+            buildConfigField 'Integer', 'READ_TIME_OUT', "60"
+            buildConfigField 'Integer', 'CONNECT_TIME_OUT', "60"
+        }
+    }
+}
+ext {
+//        appCombatVersion = "25.2.0"
+    appCombatVersion = "25.3.0"
+    designAndroidVersion = appCombatVersion
+    constraintLayoutVersion = "1.0.2"
+    retrofitVersion = "2.1.0"
+    gsonVersion = retrofitVersion
+    scalarsVersion = retrofitVersion
+    interceptorVersion = "3.5.0"
+    flexjsonVersion = "3.3"
+
+}
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+//    compile 'com.android.support:appcompat-v7:25.3.0'
+    compile 'com.android.support:design:25.3.0'
+    compile 'com.android.support:support-vector-drawable:25.3.0'
+    compile 'com.xdu.xhin:library:0.1.0'
+
+    compile "com.google.android.gms:play-services-gcm:10.0.1"
+    compile 'com.google.android.gms:play-services-maps:10.0.1'
+
+    compile "com.android.support:appcompat-v7:${appCombatVersion}"
+    compile "com.android.support:design:${designAndroidVersion}"
+    compile "com.android.support.constraint:constraint-layout:${constraintLayoutVersion}"
+    /**
+     * Retrofit dependencies.
+     */
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    compile 'fr.avianey.com.viewpagerindicator:library:2.4.1.1@aar'
+    compile "com.squareup.retrofit2:retrofit:${retrofitVersion}"
+    compile "com.squareup.retrofit2:converter-gson:${gsonVersion}"
+    compile "com.squareup.retrofit2:converter-scalars:${scalarsVersion}"
+    compile "com.squareup.okhttp3:logging-interceptor:${interceptorVersion}"
+    compile "net.sf.flexjson:flexjson:${flexjsonVersion}"
+    compile "com.android.support:recyclerview-v7:${appCombatVersion}"
+    compile 'com.facebook.android:facebook-android-sdk:4.20.0'
+    compile 'com.github.chrisbanes.actionbarpulltorefresh:library:0.9.9'
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    compile 'com.github.chrisbanes.photoview:library:1.2.4'
+    compile 'uk.co.chrisjenx:calligraphy:2.2.0'
+    compile 'org.apache.commons:commons-lang3:3.4'
+    compile 'com.google.firebase:firebase-messaging:9.4.0'
+
+    testCompile 'junit:junit:4.12'
+}

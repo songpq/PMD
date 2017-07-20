@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:tab="http://schemas.android.com/apk/res-auto"
+    tools:context="app.android.pmdlocker.com.pmd_locker.MainActivity">
+
+    <!--<FrameLayout-->
+        <!--android:id="@+id/content"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="0dp"-->
+        <!--android:layout_weight="1">-->
+
+
+    <!--</FrameLayout>-->
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="?android:attr/windowBackground"
+        android:layout_alignParentBottom="true"
+        app:itemIconTint="@color/colorMenuNormal"
+        android:visibility="gone"
+         />
+    <android.support.v4.view.ViewPager
+        android:id="@+id/id_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_above="@+id/change_color_tab"
+        />
+
+    <com.xdu.xhin.library.view.ChangeColorTab
+        android:id="@+id/change_color_tab"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        >
+
+        <app.android.pmdlocker.com.pmd_locker.libraries.ChangeColorItemExtra
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:id="@+id/itemAccount"
+            tab:item_color="@color/colorIcon"
+            tab:item_icon="@mipmap/ic_account_normal"
+            tab:item_text=""
+            tab:item_text_size="0sp" />
+
+        <app.android.pmdlocker.com.pmd_locker.libraries.ChangeColorItemExtra
+            android:id="@+id/itemLocation"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            tab:item_color="@color/colorIcon"
+            tab:item_icon="@mipmap/ic_location_normal"
+            tab:item_text=""
+            tab:item_text_size="0sp" />
+
+        <app.android.pmdlocker.com.pmd_locker.libraries.ChangeColorItemExtra
+            android:id="@+id/itemWallet"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            tab:item_color="@color/colorIcon"
+            tab:item_icon="@mipmap/ic_wallet_normal"
+            tab:item_text=""
+            tab:item_text_size="0sp" />
+        <app.android.pmdlocker.com.pmd_locker.libraries.ChangeColorItemExtra
+            android:id="@+id/itemBooking"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            tab:item_color="@color/colorIcon"
+            tab:item_icon="@mipmap/ic_booking_normal"
+            tab:item_text=""
+            tab:item_text_size="0sp" />
+        <app.android.pmdlocker.com.pmd_locker.libraries.ChangeColorItemExtra
+            android:id="@+id/itemNotifications"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            tab:item_color="@color/colorIcon"
+            tab:item_icon="@mipmap/ic_notifications_normal"
+            tab:item_text=""
+            tab:item_text_size="0sp" />
+        <app.android.pmdlocker.com.pmd_locker.libraries.ChangeColorItemExtra
+            android:id="@+id/itemDeals"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            tab:item_color="@color/colorIcon"
+            tab:item_icon="@mipmap/ic_deal_normal"
+            tab:item_text=""
+            tab:item_text_size="0sp" />
+    </com.xdu.xhin.library.view.ChangeColorTab>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/frameContent"
+        android:layout_above="@+id/change_color_tab"
+        >
+
+    </FrameLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:foregroundGravity="center"
+        android:id="@+id/frameLogo"
+        android:background="@color/colorBackgroundMainMenu"
+        >
+        <app.android.pmdlocker.com.pmd_locker.libraries.ScaleImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:src="@mipmap/background_main_menu"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            />
+    </FrameLayout>
+</RelativeLayout>

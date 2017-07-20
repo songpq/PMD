@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#5a7ca2</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="colorMenuSelected">#215a8a</color>
+    <color name="colorMenuNormal">#5a7ca2</color>
+    <color name="colorLineMenu">#eceef0</color>
+    <color name="colorIcon">#ffffff</color>
+    <color name="colorBackgroundMainMenu">#e8ebf0</color>
+    <color name="colorBackgroundButton">#cfd8e4</color>
+    <color name="colorTextBlue">#0d3054</color>
+    <color name="colorTextButtonDialog">#ff685b</color>
+    <color name="colorBGWhite">#e8ebf0</color>
+    <color name="colorBackgroundButtonAction">#ffd54f</color>
+    <color name="colorBorderButtonAction">#455a64</color>
+    <color name="colorTextSignUp">#909da4</color>
+    <color name="colorTransparent">#00000000</color>
+    <color name="colorBackgroundButtonHomeMenu">#aaf8f9fa</color>
+    <color name="colorTextButtonHomeMenu">#727e84</color>
+    <color name="colorBackgroundBox">#cfd8e4</color>
+    <color name="colorBorderBox">#455a64</color>
+</resources>

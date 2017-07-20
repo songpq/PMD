@@ -1,0 +1,260 @@
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="app.android.pmdlocker.com.pmd_locker.LoginActivity"
+    android:background="@color/colorBGWhite"
+    android:fillViewport="true"
+    tools:showIn="@layout/activity_signup">
+
+
+<RelativeLayout
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorBGWhite"
+    android:paddingLeft="@dimen/padding_login"
+    android:paddingRight="@dimen/padding_login"
+    android:paddingBottom="@dimen/padding_bottom_signup_login"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+            <TextView
+                android:gravity="center|right"
+                android:id="@+id/textVLabelUserName"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignTop="@+id/edVUserName"
+                android:layout_alignBottom="@+id/edVUserName"
+                android:text="Username"
+                android:layout_centerVertical="true"
+                android:textSize="@dimen/text_size_label"
+                android:paddingRight="@dimen/padding_login"
+                android:layout_marginLeft="25dp"
+                />
+            <EditText
+                android:textSize="@dimen/text_size_edittext"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/background_button_menu"
+                android:id="@+id/edVUserName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/textVLabelUserName"
+                android:lines="1"
+                android:singleLine="true"
+                android:imeOptions="actionNext"
+                />
+
+
+            <TextView
+                android:paddingRight="@dimen/padding_login"
+                android:layout_marginTop="@dimen/padding_hor_button"
+                android:layout_below="@+id/edVUserName"
+                android:textSize="@dimen/text_size_label"
+                android:layout_gravity="center_vertical"
+                android:id="@+id/textVLabelPhone"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignTop="@+id/edVPhone"
+                android:layout_alignBottom="@+id/edVPhone"
+                android:layout_alignRight="@+id/textVLabelUserName"
+                android:text="@string/text_mobile"
+                android:gravity="center|right"
+                />
+            <EditText
+                android:singleLine="true"
+                android:layout_marginTop="@dimen/padding_hor_button"
+                android:layout_below="@+id/edVUserName"
+                android:padding="@dimen/padding_ver_button"
+                android:background="@drawable/background_button_menu"
+                android:textSize="@dimen/text_size_edittext"
+                android:layout_gravity="center_vertical"
+                android:id="@+id/edVPhone"
+                android:layout_toRightOf="@+id/textVLabelPass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="phone"
+                android:lines="1"
+                android:imeOptions="actionNext"
+                />
+
+        <TextView
+            android:gravity="center|right"
+            android:paddingRight="@dimen/padding_login"
+            android:layout_marginTop="@dimen/padding_hor_button"
+            android:layout_below="@+id/edVPhone"
+            android:textSize="@dimen/text_size_label"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/textVLabelEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignTop="@+id/edVEmail"
+            android:layout_alignBottom="@+id/edVEmail"
+            android:layout_alignRight="@+id/textVLabelUserName"
+            android:text="gsg"
+            />
+        <EditText
+            android:singleLine="true"
+            android:layout_marginTop="@dimen/padding_hor_button"
+            android:layout_below="@+id/edVPhone"
+            android:padding="@dimen/padding_ver_button"
+            android:background="@drawable/background_button_menu"
+            android:textSize="@dimen/text_size_edittext"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/edVEmail"
+            android:layout_toRightOf="@+id/textVLabelPass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lines="1"
+            android:imeOptions="actionNext"
+            />
+
+
+
+
+
+
+
+
+
+
+
+        <TextView
+            android:gravity="center|right"
+            android:paddingRight="@dimen/padding_login"
+            android:layout_marginTop="@dimen/padding_hor_button"
+            android:layout_below="@+id/edVEmail"
+            android:textSize="@dimen/text_size_label"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/textVLabelFirstName"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignTop="@+id/edVFirstName"
+            android:layout_alignBottom="@+id/edVFirstName"
+            android:layout_alignRight="@+id/textVLabelUserName"
+            android:text="gsg"
+            />
+        <EditText
+            android:singleLine="true"
+            android:layout_marginTop="@dimen/padding_hor_button"
+            android:layout_below="@+id/edVEmail"
+            android:padding="@dimen/padding_ver_button"
+            android:background="@drawable/background_button_menu"
+            android:textSize="@dimen/text_size_edittext"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/edVFirstName"
+            android:layout_toRightOf="@+id/textVLabelPass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lines="1"
+            android:imeOptions="actionNext"
+            />
+
+
+        <TextView
+            android:gravity="center|right"
+            android:paddingRight="@dimen/padding_login"
+            android:layout_marginTop="@dimen/padding_hor_button"
+            android:layout_below="@+id/edVFirstName"
+            android:textSize="@dimen/text_size_label"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/textVLabelLastName"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignTop="@+id/edVLastName"
+            android:layout_alignBottom="@+id/edVLastName"
+            android:layout_alignRight="@+id/textVLabelUserName"
+            android:text="gsg"
+            />
+        <EditText
+            android:singleLine="true"
+            android:layout_marginTop="@dimen/padding_hor_button"
+            android:layout_below="@+id/edVFirstName"
+            android:padding="@dimen/padding_ver_button"
+            android:background="@drawable/background_button_menu"
+            android:textSize="@dimen/text_size_edittext"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/edVLastName"
+            android:layout_toRightOf="@+id/textVLabelPass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lines="1"
+            android:imeOptions="actionNext"
+            />
+
+
+
+
+        <TextView
+            android:gravity="center|right"
+            android:paddingRight="@dimen/padding_login"
+            android:layout_marginTop="@dimen/padding_hor_button"
+            android:layout_below="@+id/edVLastName"
+            android:textSize="@dimen/text_size_label"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/textVLabelPass"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignTop="@+id/edVPass"
+            android:layout_alignBottom="@+id/edVPass"
+            android:layout_alignRight="@+id/textVLabelUserName"
+            android:text="gsg"
+            />
+
+
+
+        <EditText
+            android:singleLine="true"
+            android:layout_marginTop="@dimen/padding_hor_button"
+            android:layout_below="@+id/edVLastName"
+            android:padding="@dimen/padding_ver_button"
+            android:background="@drawable/background_button_menu"
+            android:textSize="@dimen/text_size_edittext"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/edVPass"
+            android:layout_toRightOf="@+id/textVLabelPass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lines="1"
+
+            />
+
+
+
+
+        <TextView
+            android:layout_marginTop="@dimen/padding_bottom_signup_login"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/padding_ver_button"
+            android:paddingTop="@dimen/padding_ver_button"
+            android:paddingLeft="@dimen/padding_hor_button"
+            android:paddingRight="@dimen/padding_hor_button"
+            android:background="@drawable/background_button_action"
+            android:layout_below="@+id/edVPass"
+            android:id="@+id/textVSignUpAction"
+            android:text="OK"
+            />
+        <TextView
+            android:layout_marginTop="@dimen/padding_hor_button"
+            android:layout_below="@+id/textVSignUpAction"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textVHintOTP"
+            android:text="@string/text_message_sms"
+            android:gravity="center"
+            />
+    </RelativeLayout>
+
+
+</RelativeLayout>
+</android.support.v4.widget.NestedScrollView>

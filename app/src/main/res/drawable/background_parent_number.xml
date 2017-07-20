@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<inset xmlns:android="http://schemas.android.com/apk/res/android"
+
+    >
+
+    <shape
+        android:shape="rectangle"
+        >
+        <stroke
+            android:width="2.3dp"
+            android:color="@color/colorBorderBox"
+
+            />
+        <corners
+            android:bottomLeftRadius="14dp"
+            android:bottomRightRadius="14dp"
+            android:topLeftRadius="14dp"
+            android:topRightRadius="14dp" />
+        <solid android:color="@color/colorBackgroundBox"
+
+            />
+    </shape>
+
+</inset>

@@ -1,0 +1,156 @@
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="app.android.pmdlocker.com.pmd_locker.OTPActivity"
+    android:background="@color/colorBGWhite"
+    android:fillViewport="true"
+    tools:showIn="@layout/activity_forgot_renew_pass">
+
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorBGWhite"
+    android:paddingLeft="@dimen/padding_login"
+    android:paddingRight="@dimen/padding_login"
+    android:paddingBottom="@dimen/padding_bottom_signup_login"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/rlContent"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/textVHintOTP"
+            android:gravity="center"
+            android:text="@string/text_message_forgot_pass"
+            />
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rlContent"
+        >
+
+
+        <TextView
+            android:gravity="center|right"
+            android:id="@+id/textVLabelPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignTop="@+id/edVPhone"
+            android:layout_alignBottom="@+id/edVPhone"
+            android:text="Mobile"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/text_size_label"
+            android:paddingRight="@dimen/padding_login"
+            android:layout_marginLeft="40dp"
+            />
+        <EditText
+            android:textSize="@dimen/text_size_edittext"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/background_button_menu"
+            android:id="@+id/edVPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/textVLabelPhone"
+            android:lines="1"
+            android:singleLine="true"
+            android:imeOptions="actionNext"
+            android:inputType="phone"
+            android:editable="false"
+            />
+
+
+        <TextView
+            android:paddingRight="@dimen/padding_login"
+
+            android:layout_below="@+id/edVPhone"
+            android:textSize="@dimen/text_size_label"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/textVLabelPass"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignTop="@+id/edVPass"
+            android:layout_alignBottom="@+id/edVPass"
+            android:layout_alignRight="@+id/textVLabelPhone"
+            android:text="@string/text_password"
+            android:gravity="center|right"
+            />
+        <EditText
+            android:singleLine="true"
+            android:layout_marginTop="@dimen/padding_hor_button"
+            android:layout_below="@+id/edVPhone"
+            android:padding="@dimen/padding_ver_button"
+            android:background="@drawable/background_button_menu"
+            android:textSize="@dimen/text_size_edittext"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/edVPass"
+            android:layout_toRightOf="@+id/textVLabelPass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lines="1"
+            android:imeOptions="actionNext"
+            />
+
+        <TextView
+            android:paddingRight="@dimen/padding_login"
+
+            android:layout_below="@+id/edVPass"
+            android:textSize="@dimen/text_size_label"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/textVLabelConfirmPass"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignTop="@+id/edVConfirmPass"
+            android:layout_alignBottom="@+id/edVConfirmPass"
+            android:layout_alignRight="@+id/textVLabelPhone"
+            android:text="@string/text_re_password"
+            android:gravity="center|right"
+            />
+        <EditText
+            android:singleLine="true"
+            android:layout_marginTop="@dimen/padding_hor_button"
+            android:layout_below="@+id/edVPass"
+            android:padding="@dimen/padding_ver_button"
+            android:background="@drawable/background_button_menu"
+            android:textSize="@dimen/text_size_edittext"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/edVConfirmPass"
+            android:layout_toRightOf="@+id/textVLabelConfirmPass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lines="1"
+            android:imeOptions="actionGo"
+            />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rlContent"
+        android:gravity="center"
+        >
+        <TextView
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/padding_ver_button"
+            android:paddingTop="@dimen/padding_ver_button"
+            android:paddingLeft="@dimen/padding_hor_button"
+            android:paddingRight="@dimen/padding_hor_button"
+            android:background="@drawable/background_button_action"
+
+            android:id="@+id/textVOTPAction"
+            android:text="OK"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>
+</android.support.v4.widget.NestedScrollView>

@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackgroundMainMenu">
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:layout_scrollFlags="scroll|enterAlways" >
+            <include layout="@layout/top_bar" android:id="@+id/topBar"/>
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_below="@+id/appBar"
+        android:layout_height="match_parent"
+        android:paddingTop="@dimen/padding_in_account"
+        android:paddingLeft="@dimen/padding_in_account"
+        android:paddingRight="@dimen/padding_in_account"
+        android:paddingBottom="@dimen/padding_in_account"
+        >
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:layout_weight="0.6"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:id="@+id/textVTitleTop"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_weight="0.2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_marginTop="@dimen/padding_hor_button"
+                    android:id="@+id/llBankAccount"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:minWidth="60dp"
+                        android:gravity="right"
+                        android:text="sgongs"
+                        android:textSize="@dimen/text_size_label"
+                        android:layout_gravity="center_vertical"
+                        android:id="@+id/textVLabelBankAccount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <EditText
+                        android:layout_marginLeft="@dimen/padding_login"
+                        android:padding="@dimen/padding_ver_button"
+                        android:background="@drawable/background_button_menu"
+                        android:textSize="@dimen/text_size_edittext"
+                        android:layout_gravity="center_vertical"
+                        android:id="@+id/edVBankAccount"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginTop="@dimen/padding_hor_button"
+                    android:id="@+id/llAmount"
+                    android:layout_below="@+id/llBankAccount"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:minWidth="60dp"
+                        android:gravity="right"
+                        android:text="sgongs"
+                        android:textSize="@dimen/text_size_label"
+                        android:layout_gravity="center_vertical"
+                        android:id="@+id/textVLabelAmount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <EditText
+                        android:layout_marginLeft="@dimen/padding_login"
+                        android:padding="@dimen/padding_ver_button"
+                        android:background="@drawable/background_button_menu"
+                        android:textSize="@dimen/text_size_edittext"
+                        android:layout_gravity="center_vertical"
+                        android:id="@+id/edVAmount"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginTop="@dimen/padding_hor_button"
+                    android:id="@+id/llCreditCard"
+                    android:layout_below="@+id/llAmount"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:minWidth="60dp"
+                        android:gravity="right"
+                        android:text="sgongs"
+                        android:textSize="@dimen/text_size_label"
+                        android:layout_gravity="center_vertical"
+                        android:id="@+id/textVLabelCreditCard"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <EditText
+                        android:layout_marginLeft="@dimen/padding_login"
+                        android:padding="@dimen/padding_ver_button"
+                        android:background="@drawable/background_button_menu"
+                        android:textSize="@dimen/text_size_edittext"
+                        android:layout_gravity="center_vertical"
+                        android:id="@+id/edVCreditCard"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginTop="@dimen/padding_hor_button"
+                    android:id="@+id/llCVC"
+                    android:layout_below="@+id/llCreditCard"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:minWidth="60dp"
+                        android:gravity="right"
+                        android:text="sgongs"
+                        android:textSize="@dimen/text_size_label"
+                        android:layout_gravity="center_vertical"
+                        android:id="@+id/textVLabelCVC"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <EditText
+                        android:layout_marginLeft="@dimen/padding_login"
+                        android:padding="@dimen/padding_ver_button"
+                        android:background="@drawable/background_button_menu"
+                        android:textSize="@dimen/text_size_edittext"
+                        android:layout_gravity="center_vertical"
+                        android:id="@+id/edVCVC"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_weight="0.5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    ></RelativeLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/padding_ver_button"
+                    android:paddingTop="@dimen/padding_ver_button"
+                    android:paddingLeft="@dimen/padding_hor_button"
+                    android:paddingRight="@dimen/padding_hor_button"
+                    android:background="@drawable/background_button_action"
+                    android:id="@+id/textVConfirmAction"
+                    android:text="@string/text_confirm"
+                    android:layout_centerInParent="true"
+                    />
+            </RelativeLayout>
+        </LinearLayout>
+
+
+    </RelativeLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/frameAccount"
+        >
+
+    </FrameLayout>
+</RelativeLayout>

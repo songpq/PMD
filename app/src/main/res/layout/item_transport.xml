@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+
+    android:paddingBottom="@dimen/margin_in_account"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/padding_in_account"
+        android:paddingLeft="@dimen/padding_in_account"
+        android:paddingRight="@dimen/padding_in_account"
+        android:paddingBottom="@dimen/padding_in_account"
+        android:id="@+id/rlLocker"
+        android:background="@drawable/background_box"
+        >
+        <RelativeLayout
+            android:layout_centerVertical="true"
+            android:id="@+id/rlVIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/icon_item_height">
+            <app.android.pmdlocker.com.pmd_locker.libraries.ScaleImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:id="@+id/sivIcon"
+                android:src="@mipmap/clip_group_1"
+                />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_toRightOf="@+id/rlVIcon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:id="@+id/textVName"
+            android:gravity="center"
+            android:text="gsgs"
+            android:padding="@dimen/margin_back_action_bar"
+            />
+    </RelativeLayout>
+</RelativeLayout>

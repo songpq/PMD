@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackgroundMainMenu">
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:layout_scrollFlags="scroll|enterAlways" >
+            <include layout="@layout/top_bar" android:id="@+id/topBar"/>
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_below="@+id/appBar"
+        android:layout_height="match_parent">
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorBGWhite"
+            android:paddingLeft="@dimen/padding_login"
+            android:paddingRight="@dimen/padding_login"
+            android:paddingBottom="@dimen/padding_bottom_signup_login"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true">
+
+
+                <TextView
+                    android:gravity="center|right"
+                    android:paddingRight="@dimen/padding_login"
+                    android:layout_marginTop="@dimen/padding_hor_button"
+
+                    android:textSize="@dimen/text_size_label"
+                    android:layout_gravity="center_vertical"
+                    android:id="@+id/textVLabelFirstName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignTop="@+id/edVFirstName"
+                    android:layout_alignBottom="@+id/edVFirstName"
+                    android:layout_alignRight="@+id/textVLabelConfirmPass"
+                    android:text="gsg"
+
+                    />
+                <EditText
+                    android:singleLine="true"
+                    android:layout_marginTop="@dimen/padding_hor_button"
+
+                    android:padding="@dimen/padding_ver_button"
+                    android:background="@drawable/background_button_menu"
+                    android:textSize="@dimen/text_size_edittext"
+                    android:layout_gravity="center_vertical"
+                    android:id="@+id/edVFirstName"
+                    android:layout_toRightOf="@+id/textVLabelPass"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:lines="1"
+                    android:imeOptions="actionNext"
+                    />
+
+
+                <TextView
+                    android:gravity="center|right"
+                    android:paddingRight="@dimen/padding_login"
+                    android:layout_marginTop="@dimen/padding_hor_button"
+                    android:layout_below="@+id/edVFirstName"
+                    android:textSize="@dimen/text_size_label"
+                    android:layout_gravity="center_vertical"
+                    android:id="@+id/textVLabelLastName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignTop="@+id/edVLastName"
+                    android:layout_alignBottom="@+id/edVLastName"
+                    android:layout_alignRight="@+id/textVLabelConfirmPass"
+                    android:text="gsg"
+                    />
+                <EditText
+                    android:singleLine="true"
+                    android:layout_marginTop="@dimen/padding_hor_button"
+                    android:layout_below="@+id/edVFirstName"
+                    android:padding="@dimen/padding_ver_button"
+                    android:background="@drawable/background_button_menu"
+                    android:textSize="@dimen/text_size_edittext"
+                    android:layout_gravity="center_vertical"
+                    android:id="@+id/edVLastName"
+                    android:layout_toRightOf="@+id/textVLabelPass"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:lines="1"
+                    android:imeOptions="actionNext"
+                    />
+
+
+                <TextView
+                    android:gravity="center|right"
+                    android:paddingRight="@dimen/padding_login"
+                    android:layout_marginTop="@dimen/padding_hor_button"
+                    android:layout_below="@+id/edVLastName"
+                    android:textSize="@dimen/text_size_label"
+                    android:layout_gravity="center_vertical"
+                    android:id="@+id/textVLabelPass"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignTop="@+id/edVPass"
+                    android:layout_alignBottom="@+id/edVPass"
+                    android:layout_alignRight="@+id/textVLabelConfirmPass"
+                    android:text="gsg"
+                    />
+
+
+
+                <EditText
+                    android:singleLine="true"
+                    android:layout_marginTop="@dimen/padding_hor_button"
+                    android:layout_below="@+id/edVLastName"
+                    android:padding="@dimen/padding_ver_button"
+                    android:background="@drawable/background_button_menu"
+                    android:textSize="@dimen/text_size_edittext"
+                    android:layout_gravity="center_vertical"
+                    android:id="@+id/edVPass"
+                    android:layout_toRightOf="@+id/textVLabelPass"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:lines="1"
+                    android:imeOptions="actionNext"
+
+                    />
+
+                <TextView
+                    android:gravity="center|right"
+                    android:paddingRight="@dimen/padding_login"
+                    android:layout_marginTop="@dimen/padding_hor_button"
+                    android:layout_below="@+id/edVPass"
+                    android:textSize="@dimen/text_size_label"
+                    android:layout_gravity="center_vertical"
+                    android:id="@+id/textVLabelConfirmPass"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignTop="@+id/edVConfirmPass"
+                    android:layout_alignBottom="@+id/edVConfirmPass"
+
+                    android:text="gsg"
+                    />
+
+
+
+                <EditText
+                    android:singleLine="true"
+                    android:layout_marginTop="@dimen/padding_hor_button"
+                    android:layout_below="@+id/edVPass"
+                    android:padding="@dimen/padding_ver_button"
+                    android:background="@drawable/background_button_menu"
+                    android:textSize="@dimen/text_size_edittext"
+                    android:layout_gravity="center_vertical"
+                    android:id="@+id/edVConfirmPass"
+                    android:layout_toRightOf="@+id/textVLabelConfirmPass"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:lines="1"
+
+                    />
+                <TextView
+                    android:layout_marginTop="@dimen/padding_bottom_signup_login"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/padding_ver_button"
+                    android:paddingTop="@dimen/padding_ver_button"
+                    android:paddingLeft="@dimen/padding_hor_button"
+                    android:paddingRight="@dimen/padding_hor_button"
+                    android:background="@drawable/background_button_action"
+                    android:layout_below="@+id/edVConfirmPass"
+                    android:id="@+id/textVUpdateAction"
+                    android:text="OK"
+                    />
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/frameProfile"
+        >
+
+    </FrameLayout>
+</RelativeLayout>

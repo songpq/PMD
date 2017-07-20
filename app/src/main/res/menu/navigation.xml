@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_account"
+        android:icon="@mipmap/ic_account_normal"
+        android:title="" />
+
+    <item
+        android:id="@+id/navigation_location"
+        android:icon="@mipmap/ic_location_normal"
+        android:title="" />
+
+    <item
+        android:id="@+id/navigation_wallet"
+        android:icon="@mipmap/ic_wallet_normal"
+        android:title="" />
+    <item
+        android:id="@+id/navigation_booking"
+        android:icon="@mipmap/ic_booking_normal"
+        android:title="" />
+    <item
+        android:id="@+id/navigation_notifications"
+        android:icon="@mipmap/ic_notifications_normal"
+        android:title="" />
+    <item
+        android:id="@+id/navigation_daily_deals"
+        android:icon="@mipmap/ic_deal_normal"
+        android:title="" />
+</menu>

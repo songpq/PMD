@@ -1,0 +1,23 @@
+﻿Các tính năng Machine
+
+1.Press Play: Play Video (local hay từ server)
+Dùng cơ chế HLS hay ntn
+Player có những gì,có điều khiển âm thanh,ánh sáng gì không
+
+2.Màn hình login.
+
+3.Có đăng kí tài không.
+
+4.Màn hình Download Safekeep App & Start booking from your phone là ntn(có phải là download app của phone lên machine)
+
+5.DAILY DEALS 
+FREEBIES FOR ALL
+(Simply take a picture of this voucher & flash it on your mobile phone to activate it) 
+Cái này là chụp hình cái voucher từ app của đt pk?
+
+6.Màn hình Please Select your locker (cái này anh cần mô tả rõ là hiển thị như thế nào)
+dùng để biết chỗ nào còn trống ,hay click vào là đặt chỗ hay ntn
+ví dụ có 100 chỗ thì hiển thị ntn
+
+7.QR Code: sau khi quét xong thì mở link rồi có làm gì nữa không,ghi nhận hay mở wap lên
+

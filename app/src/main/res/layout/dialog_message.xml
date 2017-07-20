@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_dialog_message"
+    android:paddingBottom="4dp">
+
+    <TextView
+        android:id="@+id/textVTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingBottom="4dp"
+        android:paddingTop="6dp"
+        android:singleLine="true"
+        android:text="@string/text_title_message"
+        android:textColor="#8f94a0"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textVMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textVTitle"
+        android:layout_marginBottom="13dp"
+        android:layout_marginLeft="@dimen/margin_dialog_message"
+        android:layout_marginRight="@dimen/margin_dialog_message"
+        android:layout_marginTop="14dp"
+        android:paddingBottom="5dp"
+        android:gravity="left|top"
+        android:textColor="#8f94a0" />
+
+    <RelativeLayout
+        android:id="@+id/rlAction"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/textVMessage"
+        android:gravity="center_vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1.2dp"
+            android:background="#dee0e5" />
+
+        <TextView
+            android:id="@+id/btnCancel"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/vHCenter"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:text="no"
+            android:textColor="#828795"
+            android:textSize="18sp" />
+
+        <View
+            android:id="@+id/vHCenter"
+            android:layout_width="1.5dp"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:background="#dee0e5" />
+
+        <TextView
+
+            android:id="@+id/btnOk"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:layout_toRightOf="@+id/vHCenter"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:text="Yes"
+            android:textColor="@color/colorTextButtonDialog"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+</RelativeLayout>

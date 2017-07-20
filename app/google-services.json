@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "216180630898",
+    "firebase_url": "https://safekeep-1c8ea.firebaseio.com",
+    "project_id": "safekeep-1c8ea",
+    "storage_bucket": "safekeep-1c8ea.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:216180630898:android:64a21a4c0a488247",
+        "android_client_info": {
+          "package_name": "app.android.pmdlocker.com.pmd_locker"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "216180630898-mmhgqoq0sn2hbnpa2ip1r3krol64m0sv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBbRA67oN7tdcRMW8vhYs7TyIbkS9xbtyc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
